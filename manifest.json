@@ -1,0 +1,28 @@
+{
+  "name": "qiaomu-drama-generator",
+  "version": "3.2.1",
+  "mode": "production",
+  "language": "zh-CN",
+  "entry": "SKILL.md",
+  "interface": "agents/interface.yaml",
+  "resources": [
+    "references/task-router.md",
+    "references/generation-rules.md",
+    "references/genre-engines.md",
+    "references/output-format.md",
+    "references/script-format-spec.md",
+    "references/quality-and-boundaries.md"
+  ],
+  "scripts": [
+    "scripts/validate_script_format.py"
+  ],
+  "quality_gates": [
+    "trigger_aware_description",
+    "structured_output_contract",
+    "strict_docx_derived_script_markers",
+    "reference_format_not_reference_story",
+    "txt_or_pdf_content_marker_preservation",
+    "reference_boundary",
+    "content_safety_boundary"
+  ]
+}

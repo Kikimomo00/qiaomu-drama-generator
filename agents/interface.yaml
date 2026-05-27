@@ -1,0 +1,115 @@
+name: qiaomu-drama-generator
+version: 3.2.1
+mode: production
+language: zh-CN
+summary: 中文竖屏微短剧生成、续写、改写、优化、严格标记正文和 .txt/PDF 交付接口。
+
+triggers:
+  include:
+    - 短剧
+    - 微短剧
+    - 竖屏剧
+    - 小程序短剧
+    - 网剧
+    - 分集大纲
+    - 正文剧本
+    - txt剧本
+    - PDF剧本
+    - 剧本文档
+    - 荒年穿越格式
+    - 参考文档格式
+    - 标记格式
+    - 续写
+    - 改写
+    - 钩子
+    - 付费卡点
+    - 爆款开头
+    - ReelShort
+    - DramaBox
+    - 品牌短剧
+    - 文旅短剧
+  exclude:
+    - 电影长片剧本
+    - 舞台剧
+    - 纯小说写作
+    - 纪录片脚本
+    - 新闻报道
+
+inputs:
+  required:
+    - user_request
+  optional:
+    - theme
+    - target_audience
+    - episode_count
+    - episode_duration
+    - genre
+    - platform
+    - constraints
+    - existing_outline
+    - existing_script
+    - reference_script
+    - strict_format_reference
+    - output_artifact_type
+    - brand_info
+    - compliance_boundaries
+
+outputs:
+  default:
+    type: drama_script
+    artifact_types:
+      - inline_text
+      - txt
+      - pdf
+    sections:
+      - title
+      - 一、剧本
+      - 二、正文剧本
+    strict_markers:
+      - 第 N 集
+      - N-M 场景名 日内/日外/夜内/夜外/昏内/昏外
+      - 人物：
+      - △ / Δ
+      - 人物名：对白
+      - 人物名（OS）：内心独白
+      - 人物名（VO）：旁白
+      - 系统面板（字幕）：【信息】
+  outline:
+    sections:
+      - title
+      - 一、核心设定
+      - 二、人物关系
+      - 三、金手指/能力规则
+      - 四、反派阶梯
+      - 五、分集大纲
+  review:
+    sections:
+      - 一、格式问题
+      - 二、节奏问题
+      - 三、爽点问题
+      - 四、钩子问题
+      - 五、可拍摄性问题
+      - 六、修改建议
+
+quality_gates:
+  - first_episode_has_immediate_conflict
+  - first_three_episodes_progress
+  - each_episode_has_core_event
+  - each_episode_has_cliffhanger
+  - standard_scene_format
+  - strict_docx_derived_script_markers
+  - reference_format_not_reference_story
+  - txt_or_pdf_content_marker_preservation
+  - shootable_action
+  - continuity_consistency
+  - compliant_revenge_and_conflict
+
+resources:
+  skill: SKILL.md
+  task_router: references/task-router.md
+  generation_rules: references/generation-rules.md
+  genre_engines: references/genre-engines.md
+  output_format: references/output-format.md
+  script_format_spec: references/script-format-spec.md
+  quality_and_boundaries: references/quality-and-boundaries.md
+  format_validator: scripts/validate_script_format.py
