@@ -48,7 +48,53 @@ compliance_check:
   no_exploitative_minors_content: true
   revenge_has_moral_legitimacy: true
   value_orientation_not_malicious: true
+
+expectation_check:
+  viewer_can_name_the_next_important_event: true
+  expectation_is_specific: true
+  expectation_not_replaced_by_withholding_all_information: true
+
+information_gap_check:
+  gap_changes_action_or_expectation: true
+  repeated_misunderstanding_changes_at_least_one_condition: true
+  ability_has_limit_cost_and_goal: true
+
+emotion_progression_check:
+  repetition_changes_mechanism: true
+  payoff_has_visible_consequence: true
+  stage_is_not_a_pile_of_unrelated_troubles: true
+
+card_check:
+  small_card_names_a_concrete_next_result: true
+  big_card_changes_story_state: true
+  card_positions_follow_project: true
+  no_default_paywall_at_episode_ten: true
+
+opening_check:
+  episode_one_stops_viewer: true
+  episode_one_is_understandable: true
+  episode_one_creates_emotion: true
+  episode_one_promises_what_comes_next: true
+
+stage_gate:
+  do_not_continue_long_draft_if_opening_fails: true
+  issue_order: structure_then_event_then_scene_then_language
 ```
+
+## 阶段性审核怎么接进质检
+
+任何检查、改写前诊断、以及决定要不要续写长篇时，读取 [阶段性审核](methodology-review.md)。原有六段标题保持不变，新规则写进对应段落：
+
+- 格式问题：标记和脚本结果。`scripts/validate_script_format.py` 默认只查标记；`--structure` 额外检查集数连续、场景序号、每集对白。脚本不判断期待和卡点质量。
+- 节奏问题：手段是不是只在加码，中段是不是互不相关的小麻烦，该停时有没有继续堆集。
+- 爽点问题：核心期待是否具体，五个环节是否齐全，有没有只憋屈、不给局部回报。
+- 钩子问题：小卡点是否写出下一集的具体结果。项目写明了大卡点或一卡、二卡、三卡时，再看主线状态有没有变。没写明，就不按第十集付费点挑错。
+- 可拍摄性问题：一场戏离开时，局面是否和进入时不同。
+- 修改建议：先结构，再事件，再场景，最后语言。
+
+跨阶段或用户要看值不值得往下写时，追加“七、阶段审核”。前三集没立住核心期待，就停在改框架，不先把后面几十集写完。
+
+开篇四项任务的细则见 [第一集与前三集](methodology-opening.md)。小卡点和阶段节点的细则见 [卡点](methodology-cards.md)。
 
 ## 参考附件适配
 

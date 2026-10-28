@@ -1,6 +1,6 @@
 {
   "name": "qiaomu-drama-generator",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "mode": "production",
   "language": "zh-CN",
   "entry": "SKILL.md",
@@ -11,7 +11,15 @@
     "references/genre-engines.md",
     "references/output-format.md",
     "references/script-format-spec.md",
-    "references/quality-and-boundaries.md"
+    "references/quality-and-boundaries.md",
+    "references/methodology-expectation.md",
+    "references/methodology-information-gap.md",
+    "references/methodology-emotion.md",
+    "references/methodology-cards.md",
+    "references/methodology-opening.md",
+    "references/methodology-benchmark.md",
+    "references/methodology-review.md",
+    "references/methodology-episode-scene.md"
   ],
   "scripts": [
     "scripts/validate_script_format.py"
@@ -23,6 +31,8 @@
     "reference_format_not_reference_story",
     "txt_or_pdf_content_marker_preservation",
     "reference_boundary",
-    "content_safety_boundary"
+    "content_safety_boundary",
+    "methodology_loaded_by_stage",
+    "no_fixed_card_episode_without_project_spec"
   ]
 }

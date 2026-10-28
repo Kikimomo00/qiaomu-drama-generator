@@ -1,5 +1,5 @@
 name: qiaomu-drama-generator
-version: 3.2.1
+version: 3.3.0
 mode: production
 language: zh-CN
 summary: 中文竖屏微短剧生成、续写、改写、优化、严格标记正文和 .txt/PDF 交付接口。
@@ -23,6 +23,16 @@ triggers:
     - 改写
     - 钩子
     - 付费卡点
+    - 小卡点
+    - 大卡点
+    - 一卡
+    - 二卡
+    - 三卡
+    - 信息差
+    - 核心期待
+    - 审稿
+    - 拉片
+    - 对标
     - 爆款开头
     - ReelShort
     - DramaBox
@@ -90,6 +100,8 @@ outputs:
       - 四、钩子问题
       - 五、可拍摄性问题
       - 六、修改建议
+    optional_sections:
+      - 七、阶段审核
 
 quality_gates:
   - first_episode_has_immediate_conflict
@@ -103,6 +115,12 @@ quality_gates:
   - shootable_action
   - continuity_consistency
   - compliant_revenge_and_conflict
+  - core_expectation_specific
+  - information_gap_changes_action
+  - small_card_names_next_result
+  - no_default_paywall_episode
+  - episode_one_four_tasks
+  - stage_gate_before_long_draft
 
 resources:
   skill: SKILL.md
@@ -112,4 +130,12 @@ resources:
   output_format: references/output-format.md
   script_format_spec: references/script-format-spec.md
   quality_and_boundaries: references/quality-and-boundaries.md
+  methodology_expectation: references/methodology-expectation.md
+  methodology_information_gap: references/methodology-information-gap.md
+  methodology_emotion: references/methodology-emotion.md
+  methodology_cards: references/methodology-cards.md
+  methodology_opening: references/methodology-opening.md
+  methodology_benchmark: references/methodology-benchmark.md
+  methodology_review: references/methodology-review.md
+  methodology_episode_scene: references/methodology-episode-scene.md
   format_validator: scripts/validate_script_format.py
