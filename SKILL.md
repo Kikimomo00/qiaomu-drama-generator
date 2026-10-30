@@ -87,13 +87,14 @@ N-M 场景名 日内/日外/夜内/夜外/昏内/昏外【可选字幕】
 | 分集大纲、节奏改写 | 安排事件递进和爽点 | [情绪递进与阶段事件](references/methodology-emotion.md) |
 | 开篇 | 写或改第 1 集、前 3 集 | [第一集与前三集](references/methodology-opening.md) |
 | 集尾和阶段节点 | 设计小卡点；项目写明了大卡点或一卡二卡三卡时再使用对应规则 | [卡点](references/methodology-cards.md) |
-| 细纲和正文 | 写单集、场景、人物行动 | [分集、场景与人物](references/methodology-episode-scene.md)，以及格式规范、输出模式 |
+| 细纲和正文 | 写单集、场景、人物行动 | [正文写作规则](references/script-writing-rules.md)（必读），[分集、场景与人物](references/methodology-episode-scene.md)，以及格式规范、输出模式 |
 | 改写 | 先诊断，再只读有问题的那一层 | 先 [阶段性审核](references/methodology-review.md) |
-| 审稿、质检 | 任何检查 | [阶段性审核](references/methodology-review.md)、[质检与边界](references/quality-and-boundaries.md) |
+| 审稿、质检 | 任何检查 | [正文写作规则](references/script-writing-rules.md)、[阶段性审核](references/methodology-review.md)、[质检与边界](references/quality-and-boundaries.md) |
 | 对标、拉片 | 用户给出作品或要求拆解 | [对标拆解](references/methodology-benchmark.md) |
 
 原有工作流仍然使用：
 
+- [正文写作规则](references/script-writing-rules.md)（写正文、改写、自检必读）
 - [任务路由](references/task-router.md)
 - [短剧生成规则](references/generation-rules.md)
 - [类型引擎库](references/genre-engines.md)
