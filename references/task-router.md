@@ -6,6 +6,7 @@
 
 共用规则：
 
+- 构思、写作、续写、改写、自检前，先完整读取 references/methodology-unified-standard.md（总纲），写完按同一标准复查。
 - 正文、续写、改写后的正文，读取 `references/script-format-spec.md` 和 `references/output-format.md`。
 - 交付 `.txt` 后运行 `scripts/validate_script_format.py`。要检查集数是否连续、每集是否有场景和对白时，再加 `--structure`。
 - 对外成稿都要过 `references/quality-and-boundaries.md` 的合规边界。
